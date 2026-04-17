@@ -17,7 +17,7 @@ tour = IG.Tour()
 tour.Description(IG.Tour.TEXT,tourDescription)
 request.addTour(tour)
 
-node = request.XenVM("docker")
+node = request.RawPC("docker")
 node.cores = 2
 node.ram = 1024
 node.routable_control_ip = "true" 
